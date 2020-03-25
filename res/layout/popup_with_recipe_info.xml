@@ -1,0 +1,92 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/userEditInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/user_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+                <Button
+                    android:id="@+id/triggerBumblebee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:textColor="@color/colorWhite"
+                    android:backgroundTint="@color/colorOrange"
+                    android:text="Ask bumblebee"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/assistant_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text=""
+            android:textSize="30sp" />
+
+
+        <ImageView
+            android:id="@+id/recipe_image_popup"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/more_results_popup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See more results"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorOrange"
+                android:padding="15dp"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/go_to_recipe_popup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Go to recipe"
+                android:padding="15dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorOrange"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="3">
+
+            <ImageView
+                android:id="@+id/recipe_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/goose_logo" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/ingredient_name"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="22sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/serving_size_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:gravity="center_horizontal"
+                    android:text="Serving size"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:background="@color/colorLighterGray"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/serving_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:gravity="center_horizontal"
+                    android:text="---"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/calories_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:background="@color/colorLighterGray"
+                    android:gravity="center_horizontal"
+                    android:text="Calories"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/calories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:gravity="center_horizontal"
+                    android:text="---"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="10"
+            android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:gravity="center_horizontal"
+                    android:text="Macronutrients"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:background="@color/colorLighterGray"
+                    android:id="@+id/macro_label"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/macro">
+
+                        <TextView
+                            android:id="@+id/protein"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="vertical"
+                            android:text="--"
+                            android:textSize="20sp"
+                            android:gravity="center_horizontal"/>
+
+                        <TextView
+                            android:id="@+id/carbs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="vertical"
+                            android:text="--"
+                            android:textSize="20sp"
+                            android:gravity="center_horizontal"/>
+
+                        <TextView
+                            android:id="@+id/fat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="vertical"
+                            android:text="--"
+                            android:textSize="20sp"
+                            android:gravity="center_horizontal"/>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:gravity="center_horizontal"
+                    android:text="Micronutrients"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:background="@color/colorLighterGray"
+                    android:id="@+id/micro_label"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"/>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/micro">
+
+                    </LinearLayout>
+                </ScrollView>
+
+
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/trigger_ganz"
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    android:visibility="gone"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
