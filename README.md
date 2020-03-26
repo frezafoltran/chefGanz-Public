@@ -2,7 +2,7 @@
 
 You can see the app in action below.
 
-<img src="https://raw.githubusercontent.com/frezafoltran/chefGanzPublic/master/ganz_screenshots/ganz_snippet.gif" width="250">
+<img src="https://raw.githubusercontent.com/frezafoltran/chefGanz-Public/master/ganz_screenshots/ganz_snippet.gif" width="250">
 <img src="/ganz_screenshots/ganz2.png" width="250">
 
 ## What is Ganz for?
